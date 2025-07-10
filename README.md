@@ -107,9 +107,10 @@ Exemplo: http://localhost:8081/tarefas/6
 Método: DELETE
 
 Testes via Postman
+
 Você pode testar todos os endpoints usando o [Postman](https://github.com/exteraraujo/GerenciadorTarefasAPI/tree/main/postman).
 
-Tecnologias utilizadas
+Tecnologias utilizadas:
 
 Java 21
 Spring Boot
@@ -118,6 +119,7 @@ Maven
 Postman
 
 Observações
+
 A API não possui banco de dados persistente ainda – os dados são armazenados em memória enquanto o servidor está rodando.
 Cada vez que a aplicação reinicia, os dados são resetados.
 O objetivo deste projeto é demonstrar domínio em criação de APIs RESTful com Java e Spring Boot.
