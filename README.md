@@ -1,38 +1,68 @@
-Gerenciador de Tarefas API
+# Gerenciador de Tarefas - API REST com Spring Boot
 
-Este é um projeto em desenvolvimento de um **Gerenciador de Tarefas** criado por mim, utilizando **Java** e **Spring Boot**, com foco em aprendizado prático de **Programação Orientada a Objetos (POO)** e construção de **APIs REST**.
+Este projeto é uma **API funcional em Java com Spring Boot**, desenvolvida para praticar conceitos de back-end e mostrar domínio de construção de APIs RESTful completas.
 
-## Status do Projeto
+Ela permite:
 
-Projeto em fase inicial.  
-Estou estruturando toda a parte do **back-end**, definindo as funcionalidades e começando a construir a **API**.  
-Novas funcionalidades e melhorias serão adicionadas aos poucos.
+- ✅ Criar tarefas
+- 📋 Listar tarefas
+- ✏️ Atualizar tarefas
+- ❌ Deletar tarefas
 
-## Objetivo
-
-Criar uma aplicação completa onde será possível:
-
-- ✅ Cadastrar novas tarefas
-- ✅ Listar tarefas
-- ⏳ Marcar como concluída
-- ⏳ Atualizar ou remover tarefas
-- ⏳ Adicionar autenticação e filtros
-
-## Tecnologias utilizadas
-
-- Java 21
-- Spring Boot
-- Maven
-- Eclipse IDE
-
-## Em breve...
-
-- Conexão com banco de dados
-- CRUD completo de tarefas
-- Filtros, ordenações e autenticação
-- Deploy da API
+A API segue os padrões do CRUD (Create, Read, Update, Delete).
 
 ---
 
-> Este repositório está sendo utilizado como parte do meu processo de aprendizado em desenvolvimento back-end.  
-> Todo feedback é bem-vindo!
+## Como executar o projeto
+
+1. Certifique-se de ter o **Java 17+** instalado.
+
+2. Importe o projeto em uma IDE como o Eclipse ou IntelliJ.
+   
+3. Rode a aplicação com a classe principal:
+@SpringBootApplication
+public class GerenciadorTarefasApplication {
+public static void main(String[] args) {
+SpringApplication.run(GerenciadorTarefasApplication.class, args);
+}
+}
+
+4. A API ficará disponível em:  
+`http://localhost:8081/tarefas`
+
+---
+
+## Estrutura do Projeto
+src/
+└── main/java/
+│ └── com.ester.gerenciador/
+│ └── GerenciadorTarefasApiApplication.java/
+│ ├── controller/
+│ │ └── TarefaController.java
+│ ├── model/
+│ │ └── Tarefa.java
+│ ├── repository/
+│ │ └──  TarefaRepository.java
+│ ├── service
+│   └── TarefaService.java
+└── resources/
+  └── application.properties
+└── test/java
+└── JRE System Library
+└── Mavem Dependencies
+└── src/pom.xml
+
+---
+
+## 🔌 Endpoints disponíveis
+
+### 🔹 Criar Tarefa – POST
+- **URL:** `http://localhost:8081/tarefas`
+- **Método:** POST  
+- **Corpo JSON:**
+```json
+{
+  "descricao": "Terminar Projeto Gerenciador de Tarefas",
+  "concluida": false
+}
+<img width="1269" height="697" alt="image" src="https://github.com/user-attachments/assets/b4ffe275-3a5d-43d8-82e8-489f4523cd6c" />´´´
