@@ -54,15 +54,56 @@ src/
 
 ---
 
-## 🔌 Endpoints disponíveis
+## Endpoints disponíveis
 
-### 🔹 Criar Tarefa – POST
+### Criar Tarefa – POST
 - **URL:** `http://localhost:8081/tarefas`
 - **Método:** POST  
 - **Corpo JSON:**
-```json
+  ```json
 {
   "descricao": "Terminar Projeto Gerenciador de Tarefas",
   "concluida": false
+
 }
-<img width="1269" height="697" alt="image" src="https://github.com/user-attachments/assets/b4ffe275-3a5d-43d8-82e8-489f4523cd6c" />´´´
+
+### Listar Tarefas – GET
+URL: http://localhost:8081/tarefas
+
+Método: GET
+
+Resposta esperada:
+   {
+    "id": 6,
+    "descricao": "Tarminar Garenciador de tarefas",
+    "concluida": true
+  },
+  {
+    "id": 4,
+    "descricao": "Estudar Java",
+    "concluida": false
+}
+
+
+### Atualizar Tarefa – PUT
+URL: http://localhost:8081/tarefas/{id}
+
+Exemplo: http://localhost:8081/tarefas/6
+
+Método: PUT
+
+Corpo JSON:
+{
+    "id": 6,
+    "descricao": "Terminar Projeto Gerenciador de Tarefas",
+    "concluida": true
+}
+
+### Deletar Tarefa – DELETE
+URL: http://localhost:8081/tarefas/{id}
+
+Exemplo: http://localhost:8081/tarefas/6
+
+Método: DELETE
+
+
