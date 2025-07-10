@@ -107,7 +107,7 @@ Exemplo: http://localhost:8081/tarefas/6
 Método: DELETE
 
 Testes via Postman
-Você pode testar todos os endpoints usando o Postman.
+Você pode testar todos os endpoints usando o [Postman](https://github.com/exteraraujo/GerenciadorTarefasAPI/tree/main/postman).
 
 Tecnologias utilizadas
 
@@ -124,7 +124,7 @@ O objetivo deste projeto é demonstrar domínio em criação de APIs RESTful com
 
 👩‍💻 Autor
 Feito por Ester Araújo – estudante de Engenharia de Software, com foco em desenvolvimento Full Stack e projetos com impacto positivo no mundo.
-🔗 LinkedIn
-📁 Veja outros projetos no meu GitHub
+🔗 [LinkedIn](https://www.linkedin.com/in/ester-ara%C3%BAjo-853447236/).
+📁 [Veja outros projetos no meu GitHub](https://github.com/exteraraujo/exteraraujo).
 
 
