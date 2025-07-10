@@ -15,7 +15,7 @@ A API segue os padrões do CRUD (Create, Read, Update, Delete).
 
 ## Como executar o projeto
 
-1. Certifique-se de ter o **Java 17+** instalado.
+1. Certifique-se de ter o **Java 21+** instalado.
 
 2. Importe o projeto em uma IDE como o Eclipse ou IntelliJ.
    
@@ -105,5 +105,26 @@ URL: http://localhost:8081/tarefas/{id}
 Exemplo: http://localhost:8081/tarefas/6
 
 Método: DELETE
+
+Testes via Postman
+Você pode testar todos os endpoints usando o Postman.
+
+Tecnologias utilizadas
+
+Java 21
+Spring Boot
+Spring Web
+Maven
+Postman
+
+Observações
+A API não possui banco de dados persistente ainda – os dados são armazenados em memória enquanto o servidor está rodando.
+Cada vez que a aplicação reinicia, os dados são resetados.
+O objetivo deste projeto é demonstrar domínio em criação de APIs RESTful com Java e Spring Boot.
+
+👩‍💻 Autor
+Feito por Ester Araújo – estudante de Engenharia de Software, com foco em desenvolvimento Full Stack e projetos com impacto positivo no mundo.
+🔗 LinkedIn
+📁 Veja outros projetos no meu GitHub
 
 
